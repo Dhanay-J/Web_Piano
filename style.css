@@ -1,0 +1,94 @@
+body{
+    background-color: antiquewhite;
+}
+.piano{
+    position: relative;
+}
+.piano-key {
+    border-radius: 10px;
+  display: inline-block;
+  width: 50px;
+  height: 200px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  }
+
+.white-key {
+    
+    background-color: rgb(255, 255, 255);
+    margin-left: -5px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    opacity: 100%;
+    
+    
+  }
+.white-key .text{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 15px;
+    z-index: 0;
+    position: absolute;
+    bottom: 60px;
+    color: #1d7091;
+    
+}
+.black-key {
+  position: absolute;
+  width: 30px;
+  bottom: 115px;
+  height: 130px;
+  margin-left: -25px;
+  background-color: black;
+  z-index: 1;
+  color: aqua;
+  
+    
+    
+    /* color: aliceblue; */
+  }
+
+  .display {
+    /* position: relative; */
+    margin-top: 20px;
+    width: 90%;
+    
+    border: 4px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.display #key-rec{
+    font-size: 20px;
+    word-wrap: break-word;
+
+}
+
+@media (max-width: 450px) {
+    .piano-key {
+    
+        display: inline-block;
+        width: 40px;
+        height: 200px;
+        border: 1px solid black;
+        cursor: pointer;
+        text-align: center;
+        }
+
+        .black-key {
+            position: absolute;
+            width: 20px;
+            height: 130px;
+            margin-left: -25px;
+            background-color: black;
+            z-index: 1;
+            color: aqua;
+            
+              
+              
+              /* color: aliceblue; */
+            }
+  }
